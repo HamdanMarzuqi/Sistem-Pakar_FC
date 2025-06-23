@@ -1,0 +1,147 @@
+
+/*ini bagian navbar */
+.navbar {
+    background: linear-gradient(to right, #009970, #007c6e); /* Gradasi warna hijau */
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color: #ffff07; /* Warna teks kuning */
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+.login-button {
+    background-color: #ffffff; /* Warna background putih */
+    color: #009970; /* Warna teks hijau */
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color, 0.3s color; /* Efek transisi pada hover */
+}
+
+.login-button:hover {
+    background-color: #4444c9; /* Warna background pada hover */
+    color: #ffffff; /* Warna teks pada hover */
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #000000; /* Warna teks hitammm */
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #000; /* Warna teks hitam */
+}
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #ffffff; /* Warna garis bawah putih */
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before,
+    .nav-link:active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+
+/* ini bagian card */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.card-custom {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card-custom:hover {
+    transform: translateY(-10px);
+}
+
+.card-header-custom {
+    background-image: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.form-group label {
+    font-weight: 700;
+}
+
+.form-control {
+    border-radius: 10px;
+}
+
+.btn-custom {
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.btn-success {
+    background-color: #6a11cb;
+    border: none;
+  }
+
+.btn-primary {
+    background-color: #6a11cb;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #2575fc;
+}
+
+.btn-danger {
+    background-color: #fc4a1a;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #f7b733;
+}
+
+.btn-custom+.btn-custom {
+    margin-left: 10px;
+}
+
+
+/*ini bagian register & login */
+
+ 
